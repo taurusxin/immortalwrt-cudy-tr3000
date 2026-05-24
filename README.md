@@ -1,3 +1,5 @@
+# ImmortalWRT for Cudy TR3000
+
 [定制教程](https://xiabee.eu.org/customize.html) | [刷写教程](https://xiabee.eu.org/install.html)
 
 <div align=center>
@@ -6,9 +8,20 @@
 
 ---
 
-## immortalwrt 源码
+## 固件说明
 
-编译自 https://github.com/padavanonly/immortalwrt-mt798x-6.6 ，兼容 Cudy Tr3000 128M 新 flash
+默认地址：10.10.0.1
+默认用户名密码：root / (密码为空)
+
+## 本地编译
+
+当前仓库适用于 GitHub Actions 自动编译，如果你想在本地编译，请参考 [build-local.md](build-local.md)
+
+---
+
+## ImmortalWRT 源码
+
+编译自 <https://github.com/padavanonly/immortalwrt-mt798x-6.6> ，兼容 Cudy Tr3000 128M 新 flash
 
 ---
 
@@ -25,9 +38,9 @@
 
 ## DHCP uboot
 
-编译自 https://github.com/weekdaycare/bl-mt798x-dhcpd 感谢大佬开源，兼容新 flash
+编译自 <https://github.com/weekdaycare/bl-mt798x-dhcpd> 感谢大佬开源，兼容新 flash
 
-![](/uboot.png)
+![Uboot](/uboot.png)
 
 128M uboot 为三分区 uboot 支持原厂 ubi 大小 64MB，扩容 ubi 分区 112MB，最大 ubi 分区 122MB
 
@@ -117,9 +130,3 @@ rm sing-box.tar.gz
 - [Mattraks/delete-workflow-runs](https://github.com/Mattraks/delete-workflow-runs)
 - [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
 - [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
-
----
-
-## License
-
-[MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © [**P3TERX**](https://p3terx.com)

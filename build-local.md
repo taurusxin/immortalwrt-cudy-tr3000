@@ -68,7 +68,7 @@ chmod +x build.sh
 ### 可选参数
 
 | 参数 | 说明 |
-|------|------|
+| ------ | ------ |
 | `--menuconfig` | 编译前打开配置菜单，自定义软件包 |
 | `--clean` | 清除源码和缓存，重新编译 |
 | `--no-ccache` | 不使用编译缓存 |
@@ -94,7 +94,7 @@ chmod +x build.sh
 
 编译产物位于项目目录下的 `firmware/` 文件夹：
 
-```
+```bash
 firmware/
   immortalwrt-mediatek-filogic-cudy_tr3000-v1-ubootmod-squashfs-sysupgrade.bin
 ```
@@ -103,7 +103,7 @@ firmware/
 
 打开文件资源管理器，地址栏输入：
 
-```
+```bash
 \\wsl$\Ubuntu-24.04\home\你的用户名\immortalwrt-cudy-tr3000\firmware
 ```
 
